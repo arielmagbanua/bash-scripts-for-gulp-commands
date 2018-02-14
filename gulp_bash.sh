@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 alias copy-js-files='copyJSFiles'
+alias compress-image-files='compressImageFiles'
 alias compress-js-files='compress js'
 alias compress-css-files='compress css'
 alias compress-image-files='compress images'
@@ -30,6 +31,10 @@ function copyJSFiles(){
     echo 'JS Files copied!'
 }
 
+function compressImageFiles(){
+    gulp images && echo 'Images were compress and copied!'
+}
+
 function compress(){
     ## now loop through the above array
     for i in "${dirs[@]}"
@@ -47,12 +52,6 @@ function compress(){
                 gulp css
 
                 echo 'css files compressed!'
-                ;;
-            images)
-                # TODO: Command is not yet final.
-                # gulp images
-
-                echo 'images files compressed!'
                 ;;
             html)
                 gulp html-php
