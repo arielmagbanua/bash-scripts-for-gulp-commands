@@ -3,7 +3,6 @@ alias copy-js-files='copyJSFiles'
 alias compress-image-files='compressImageFiles'
 alias compress-js-files='compress js'
 alias compress-css-files='compress css'
-alias compress-image-files='compress images'
 alias compress-html-files='compress html'
 
 # directories
